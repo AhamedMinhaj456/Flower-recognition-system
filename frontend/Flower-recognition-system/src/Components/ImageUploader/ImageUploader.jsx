@@ -4,7 +4,7 @@ import './ImageUploader.css';
 const ImageUploader = ({ setSelectedImage }) => {
   const handleImageChange = (e) => {
     if (e.target.files && e.target.files[0]) {
-      setSelectedImage(URL.createObjectURL(e.target.files[0]));
+      setSelectedImage(e.target.files[0]);
     }
   };
 
